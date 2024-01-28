@@ -1,0 +1,103 @@
+.feature_description {
+  width: 60vw;
+  height: 100%;
+  background-color: white;
+  /* border: 2px solid rgb(199, 199, 199); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: opacity_up 0.5s ease-in forwards;
+}
+
+.feature_description__text__container {
+  width: 70%;
+  height: 90%;
+  padding: 40px;
+  padding-right: 20px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.feature_description__title--md {
+  color: #0381ff;
+  background-color: white;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 19px;
+  letter-spacing: 2px;
+}
+
+.feature_description__title--lg {
+  background-color: white;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0px;
+}
+
+.feature_description__text {
+  background-color: white;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.800000011920929px;
+  text-align: right;
+}
+
+.feature_description__button {
+  display: flex;
+  padding: 15px 20px;
+  align-items: flex-start;
+  gap: 10px;
+  text-align: right;
+  background-color: white;
+  border: 0.5px solid #00000029;
+  cursor: pointer;
+}
+
+.feature_description__button__text {
+  color: #0b122a;
+  background-color: white;
+  text-align: center;
+  font-family: 'SF Pro Display';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@keyframes opacity_up {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .feature_description {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+  }
+
+  .feature_description__text__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature_description__text {
+    letter-spacing: 0.1px;
+    font-size: 14px;
+    text-align: center;
+  }
+}

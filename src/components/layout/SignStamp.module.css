@@ -1,0 +1,13 @@
+.sign_stamp {
+  display: flex;
+  flex-direction: row;
+  height: 50vh;
+}
+
+@media (max-width: 768px) {
+  .sign_stamp {
+    height: 80vh;
+    flex-direction: column;
+    position: relative;
+  }
+}

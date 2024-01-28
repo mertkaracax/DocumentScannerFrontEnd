@@ -1,0 +1,13 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  min-height: 50px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    z-index: 5;
+    width: 100%;
+    overflow-x: scroll;
+  }
+}

@@ -1,0 +1,12 @@
+.homepage {
+  margin-top: 20vh;
+  height: 60vh;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .homepage {
+    margin-top: 10vh;
+    min-height: 80vh;
+  }
+}

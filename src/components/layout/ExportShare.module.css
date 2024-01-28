@@ -1,0 +1,13 @@
+.export_share {
+  display: flex;
+  flex-direction: row;
+  height: 50vh;
+}
+
+@media (max-width: 768px) {
+  .export_share {
+    height: 80vh;
+    flex-direction: column;
+    position: relative;
+  }
+}

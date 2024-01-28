@@ -1,13 +1,13 @@
 import styles from './App.module.css';
+import { Homepage } from './pages/Homepage';
+import PageContextProvider from './store/page-context';
 
 export function App() {
   return (
-    <>
-      <header>
-        <h1>HubX Frontend Assignment</h1>
-      </header>
-
-      <main className={styles.main}></main>
-    </>
+    <PageContextProvider>
+      <main className={styles.main}>
+        <Homepage />
+      </main>
+    </PageContextProvider>
   );
 }

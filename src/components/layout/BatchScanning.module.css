@@ -1,0 +1,13 @@
+.batch_scanning {
+  display: flex;
+  flex-direction: row;
+  height: 50vh;
+}
+
+@media (max-width: 768px) {
+  .batch_scanning {
+    height: 80vh;
+    flex-direction: column;
+    position: relative;
+  }
+}

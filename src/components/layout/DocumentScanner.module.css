@@ -1,0 +1,13 @@
+.document_scanner {
+  display: flex;
+  flex-direction: row;
+  height: 50vh;
+}
+
+@media (max-width: 768px) {
+  .document_scanner {
+    min-height: 80vh;
+    flex-direction: column;
+    position: relative;
+  }
+}
